@@ -31,7 +31,7 @@ wget -4 "$SOURCE_ISO_URL" -O "./netboot.iso"
 
 # patch boot menu
 cd "$TMP_DISC_DIR"
-dos2unix "./isolinux.cfg"
+#dos2unix "./isolinux.cfg"
 patch -p1 -i "$SCRIPT_DIR/custom/boot-menu.patch"
 
 # prepare assets
